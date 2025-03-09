@@ -25,18 +25,6 @@ namespace AlchemistNPCLite
 		public HashSet<NPCDefinition> DisabledLocatorNpcs = new HashSet<NPCDefinition>();
 
 		[Range(1, 1000000)]
-		[DefaultValue(1000)]
-		public int StarPrice;
-		
-		[Range(1, 1000000)]
-		[DefaultValue(1000)]
-		public int RecallPrice;
-		
-		[Range(1, 1000000)]
-		[DefaultValue(1000)]
-		public int WormholePrice;
-		
-		[Range(1, 1000000)]
 		[DefaultValue(700)]
 		public int SiltSlushPrice;
 		
