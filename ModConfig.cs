@@ -13,30 +13,6 @@ namespace AlchemistNPCLite
 		public override ConfigScope Mode => ConfigScope.ServerSide;
 		
 		[DefaultValue(true)]
-		public bool AlchemistSpawn;
-		
-		[DefaultValue(true)]
-		public bool BrewerSpawn;
-		
-		[DefaultValue(true)]
-		public bool JewelerSpawn;
-		
-		[DefaultValue(true)]
-		public bool YoungBrewerSpawn;
-		
-		[DefaultValue(true)]
-		public bool ArchitectSpawn;
-		
-		[DefaultValue(true)]
-		public bool OperatorSpawn;
-		
-		[DefaultValue(true)]
-		public bool MusicianSpawn;
-		
-		[DefaultValue(true)]
-		public bool TinkererSpawn;
-		
-		[DefaultValue(true)]
 		public bool LifeformAnalyzer;
 		
 		[DefaultValue(false)]
@@ -48,19 +24,6 @@ namespace AlchemistNPCLite
 		//[Range(-4000, 4000)]
 		public HashSet<NPCDefinition> DisabledLocatorNpcs = new HashSet<NPCDefinition>();
 
-		[DefaultValue(true)]
-		public bool RevPrices;
-		
-		[DefaultValue(true)]
-		public bool CatchNPC;
-		
-		[DefaultValue(true)]
-		public bool ModItems;
-		
-		[Range(1, 1000)]
-		[DefaultValue(1)]
-		public int PotsPriceMulti;
-		
 		[Range(1, 1000000)]
 		[DefaultValue(1000)]
 		public int StarPrice;
@@ -80,10 +43,6 @@ namespace AlchemistNPCLite
 		[Range(1, 1000000)]
 		[DefaultValue(1000)]
 		public int DesertFossilPrice;
-
-		[Range(0, 100)]
-		[DefaultValue(10)]
-		public int ShopChangeDelay;
 
 		public override ModConfig Clone() {
 			var clone = (ModConfiguration)base.Clone();
