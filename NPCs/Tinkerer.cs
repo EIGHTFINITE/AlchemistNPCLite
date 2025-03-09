@@ -87,7 +87,7 @@ namespace AlchemistNPCLite.NPCs
         }
 
 
-        public override List<string> SetNPCNameList()
+        public override List<string> SetNPCNameList()/* tModPorter Suggestion: Return a list of names */
         {
             string Alexander = Language.GetTextValue("Mods.AlchemistNPCLite.Alexander");
             string Peter = Language.GetTextValue("Mods.AlchemistNPCLite.Peter");

@@ -101,7 +101,7 @@ namespace AlchemistNPCLite.NPCs
 
 
 
-        public override List<string> SetNPCNameList()
+        public override List<string> SetNPCNameList()/* tModPorter Suggestion: Return a list of names */
         {                                       //NPC names
             string Beethoven = Language.GetTextValue("Mods.AlchemistNPCLite.Beethoven");
             string Bach = Language.GetTextValue("Mods.AlchemistNPCLite.Bach");

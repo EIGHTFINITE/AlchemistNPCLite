@@ -103,7 +103,7 @@ namespace AlchemistNPCLite.NPCs
             return false;
         }
 
-        public override List<string> SetNPCNameList()
+        public override List<string> SetNPCNameList()/* tModPorter Suggestion: Return a list of names */
         {
             string Angela = Language.GetTextValue("Mods.AlchemistNPCLite.Angela");
             string Carmen = Language.GetTextValue("Mods.AlchemistNPCLite.Carmen");

@@ -1,4 +1,5 @@
 using Microsoft.Xna.Framework;
+using System;
 using System.Collections.Generic;
 using Terraria;
 using Terraria.ID;
@@ -156,7 +157,7 @@ namespace AlchemistNPCLite.Items
 			}
 		}
 
-        public override bool? UseItem(Item item, Player player)
+        public override Nullable<bool> UseItem(Item item, Player player)/* tModPorter Suggestion: Return null instead of false */
         {
             AlchemistNPCLitePlayer modPlayer = player.GetModPlayer<AlchemistNPCLitePlayer>();
             if (item.type == 1991 || item.type == 3183)

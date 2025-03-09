@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
 using Terraria;
@@ -98,7 +99,7 @@ namespace AlchemistNPCLite.Items.Misc
 			}
 		}
 		
-		public override bool? UseItem(Player player)
+		public override Nullable<bool> UseItem(Player player)/* tModPorter Suggestion: Return null instead of false */
         {
 			if (Main.dayTime)
 			{
